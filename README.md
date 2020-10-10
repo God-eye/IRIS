@@ -1,6 +1,7 @@
 # IRIS
-<<<<<<< HEAD
-TEST-updated
-=======
-RTD
->>>>>>> e632e3d43507e23330b9d2a00929477cd122bc22
+Lets start adding some real documentation!
+
+# TODO
+ - [x]   Edit the current Readme to show progress
+ - [ ]   Start adding reStructured Text
+  
