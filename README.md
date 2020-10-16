@@ -4,6 +4,6 @@ We have developed an AI powered algorithm for detecting such anamolies. This aim
 
 # TODO
  - [x]   Edit the current Readme to show progress
- - [ ]   Update docs for a more in depth view of the algorith
+ - [ ]   Update docs for a more in depth view of the algorithm
  - [ ]   Improve Frontend
  - [ ]   Deploy  the algoritm
