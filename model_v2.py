@@ -24,7 +24,7 @@ tf.config.experimental.set_memory_growth(physical_devices[0], True)
 
 ###################### Parameter Initialization ########################################
 class Config():
-  def __init__(self, train_path, test_path, model_path, result_pth, img_size = (128, 128), batch_size = 8, mx_frm = 1600, stride = [1, 2], frm_cnt = 10, test_size = 400, epochs = 10, tst_seq = 300):
+  def __init__(self, train_path = None, test_path, model_path, result_pth, img_size = (128, 128), batch_size = 8, mx_frm = 1600, stride = [1, 2], frm_cnt = 10, test_size = 400, epochs = 10, tst_seq = 300):
     self.train_path = train_path
     self.test_path = test_path
     self.img_size = img_size
@@ -373,11 +373,10 @@ def test(test_path):
   fle.close()
 
 if __name__ == '__main__':
-  model_path = 'Model/tpu_model.h5'
-  train_path = '/content/drive/My Drive/Anomaly detection/UCF/Anomaly-Detection-Dataset/Train'
+  model_path = 'model_weights/anomaly_detect.h5'
   result_pth = 'IRIS_WEB/IRIS-backend/public/text_files/text.txt'
   test_path = 'Test'
-  cnfg = Config(train_path, test_path, model_path,result_pth, tst_seq = 300)
+  cnfg = Config(test_path, model_path,result_pth, tst_seq = 300)
   fncn = Functions()
   mdl = Model()
   img_dim = (128, 128)
