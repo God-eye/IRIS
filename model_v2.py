@@ -24,7 +24,7 @@ tf.config.experimental.set_memory_growth(physical_devices[0], True)
 
 ###################### Parameter Initialization ########################################
 class Config():
-  def __init__(self, train_path = None, test_path, model_path, result_pth, img_size = (128, 128), batch_size = 8, mx_frm = 1600, stride = [1, 2], frm_cnt = 10, test_size = 400, epochs = 10, tst_seq = 300):
+  def __init__(self, test_path, model_path, result_pth, train_path = None, img_size = (128, 128), batch_size = 8, mx_frm = 1600, stride = [1, 2], frm_cnt = 10, test_size = 400, epochs = 10, tst_seq = 300):
     self.train_path = train_path
     self.test_path = test_path
     self.img_size = img_size
